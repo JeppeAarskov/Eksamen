@@ -75,7 +75,7 @@ header a{
 }
 
 .hero div{
-    padding: 200px 30px 200px 30px;
+    padding: 150px 30px 150px 30px;
 }
 
 .secondhand{
@@ -84,7 +84,7 @@ header a{
     flex-wrap: wrap;
     background: #ffe2e2;
     justify-content: center;
-    padding: 50px;
+    padding-top: 50px;
 }
 
 .secondhandfix{
@@ -102,6 +102,10 @@ header a{
 
 .link2{
     color: #543d32;
+}
+
+.forfatter{
+    margin-left: -60px;
 }
 
 .arrow{
@@ -199,11 +203,9 @@ a:active{
 .harrypotter{
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     justify-content: center;
     margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
     padding-bottom: 100px;
 }
 
@@ -220,19 +222,19 @@ a:active{
 }
 
 .p1{
-    padding: 0px 100px 0px 100px;
+    padding: 0px 120px 0px 120px;
 }
 
 .p2{
-    padding: 0px 100px 0px 100px;
+    padding: 0px 130px 0px 130px;
 }
 
 .bog2{
     background: #fcd8de;
-    text-align: center;
     display: flex;
     flex-direction: column;
     padding-top: 100px;
+    text-align: center;
 }
 
 .bog2 h2{
@@ -244,6 +246,10 @@ a:active{
 .bog2 img{
     margin-left: auto;
     margin-right: auto;
+}
+
+.tidligere{
+    margin-top: 50px;
 }
 
 .fix3{
@@ -268,7 +274,7 @@ a:active{
     flex-direction: row;
     font-size: 17px;
     font-weight: bold;
-    gap: 50px;
+    gap: 90px;
     margin-top: -20px;
     margin-left: auto;
     margin-right: auto;
@@ -288,6 +294,7 @@ a:active{
     margin-bottom: 100px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
     transition: 0.5s;
     cursor: pointer;
     box-shadow: 1px 2px 30px 5px rgba(0, 0, 0, 0.3)
@@ -356,6 +363,10 @@ footer p{
     padding-bottom: 100px;
 }
 
+.paragraf{
+    padding: 0px 50px 0px 50px;
+}
+
 .media svg{
     width: 70px;
     fill: #FE7D4E;
@@ -398,7 +409,28 @@ footer p{
         flex-direction: row;
         justify-content: center;
         justify-content: space-between;
-        width: 80%;
+        width: 77%;
+    }
+
+    .paragraf{
+        margin-left: 20px;
+        margin-right: 200px;
+    }
+
+    .fix3 a{
+        margin-left: 5vw
+    }
+
+    .fix3 h2{
+        margin-right: auto;
+    }
+
+    .forfatter1{
+        margin-left: 160px;
+    }
+
+    .forfatter2{
+        margin-left: 100px;
     }
 
     .secondhandfix{
@@ -423,6 +455,7 @@ footer p{
 
     .bog2{
         padding: 50px 100px 50px 100px;
+        text-align: left;
     }
 
     .bog h1{
@@ -444,10 +477,14 @@ footer p{
     .footerimg{
         width: 35%;
         margin-top: -50px;
-        margin-right: -130px;
+        margin-right: -150px;
     }
 
     footer div{
         margin-right: -50px;
+    }
+
+    .p1{
+        margin-top: -40px;
     }
 }
