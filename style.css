@@ -67,6 +67,7 @@ header a{
     color: white;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/hero\ image.jpg);
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero p{
@@ -75,7 +76,7 @@ header a{
 }
 
 .hero div{
-    padding: 150px 30px 150px 30px;
+    padding: 140px 30px 140px 30px;
 }
 
 .secondhand{
