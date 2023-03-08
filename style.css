@@ -14,6 +14,11 @@ header h1{
     font-size: 30px;
 }
 
+body{
+    margin: 0;
+    padding: 0;
+}
+
 span{
     color: #FE7D4E;
 }
@@ -27,6 +32,7 @@ a:link, a:visited{
     background: #ffe2e2;
     margin: auto;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow: hidden;
 }
 
 .fix{
@@ -86,17 +92,40 @@ header a{
     align-items: center;
     padding: 0px 20px 0px 20px;
     flex-wrap: wrap;
-    text-align: center;
     color: gray;
     flex-direction: column;
 }
 
+.link1{
+    color: gray;
+}
+
+.link2{
+    color: #543d32;
+}
+
 .arrow{
     width: 40px;
+    transition: 0.3s;
+    fill: gray;
+}
+
+.arrow:hover{
+    background: black;
+    border-radius: 20px;
+    fill: white;
 }
 
 .arrow2{
     width: 40px;
+    transition: 0.3s;
+    fill: #543d32;
+}
+
+.arrow2:hover{
+    background: black;
+    border-radius: 20px;
+    fill: white;
 }
 
 .bog div{
@@ -113,13 +142,19 @@ header a{
     display: flex;
     align-items: center;
     color: gray;
-    gap: 100px;
+    width: 60%;
+    justify-content: center;
+    justify-content: space-between;
 }
 
 .fix2 div{
     display: flex;
     align-items: center;
     flex-direction: row;
+}
+
+a:active{
+    color: red;
 }
 
 .fix2 h2{
@@ -151,6 +186,14 @@ header a{
 
 .img5{
     box-shadow: 10px 10px 30px 1px rgba(0, 0, 0, 0.3)
+}
+
+.books img{
+    transition: 0.5s;
+}
+
+.books img:hover{
+    margin: -10px -30px -10px -30px;
 }
 
 .harrypotter{
@@ -247,11 +290,13 @@ header a{
     margin-right: auto;
     transition: 0.5s;
     cursor: pointer;
+    box-shadow: 1px 2px 30px 5px rgba(0, 0, 0, 0.3)
 }
 
 .fix3 a:hover{
     background: white;
     color: #FE7D4E;
+    box-shadow: 1px 2px 30px 5px rgba(255, 255, 255, 0.3)
 }
 
 .cover{
@@ -273,12 +318,13 @@ header a{
     margin-right: auto;
     transition: 0.5s;
     cursor: pointer;
+    box-shadow: 1px 2px 30px 5px rgba(0, 0, 0, 0.3)
 }
 
 .cover a:hover{
     color: #FE7D4E;
     background: white;
-    box-shadow: 5px 5px 20px 5px white;
+    box-shadow: 1px 2px 40px 5px rgba(255, 255, 255, 0.3)
 }
 
 footer{
@@ -313,11 +359,17 @@ footer p{
 .media svg{
     width: 70px;
     fill: #FE7D4E;
+    transition: 0.3s;
+}
+
+.media svg:hover{
+    fill: #543d32;
 }
 
 @media screen and (min-width: 1000px){
     .wrapper{
         max-width: 100%;
+        overflow: hidden;
     }
 
     header{
@@ -332,13 +384,27 @@ footer p{
         padding: 150px 200px 150px 200px;
     }
 
+    .hero p{
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+
     .books{
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .fix2{
-        gap: 1200px;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    .secondhandfix{
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .harrypotter{
@@ -374,5 +440,15 @@ footer p{
 
     .cover{
         padding: 350px 0px 350px 0px;
+    }
+
+    .footerimg{
+        width: 35%;
+        margin-top: -50px;
+        margin-right: -130px;
+    }
+
+    footer div{
+        margin-right: -50px;
     }
 }
